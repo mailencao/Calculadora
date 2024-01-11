@@ -11,11 +11,13 @@
  font-family: 'Digital-7';
   src: url('./fuentes/digital-7.ttf') format('truetype');
 }
-
-body{
+/*body{
     margin: 0;
     padding: 0;
     background-color: #264653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .divContainer{
@@ -28,9 +30,9 @@ body{
     background-color:  #eb6d4d;
     border-radius: 35px;
     flex-wrap: nowrap;
-    width: 30%;
+    width: 26%;
     height: 77%;
-    margin: 10% 35%;
+    margin: 8% 0;
     flex-direction: column;
     filter: drop-shadow(0 0 50px #1bab98ea);
 }
@@ -41,10 +43,10 @@ body{
     border-left:   #fce4a7d0 solid 4px;
     border-bottom: #e2be61c0 solid 7px;
     border-right:  #e2be61c0 solid 7px;
-    width: 82%;
+    width: 83%;
     height: 19%;
     border-radius: 15px;
-    margin: 10% 0% 8% 0%;
+    margin: 10% 0% 7% 0%;
     filter: drop-shadow(0px 0px 10px  #a8391dc0);
     display: flex;
     flex-direction: column;
@@ -71,9 +73,9 @@ body{
     display: grid;
     grid-template-columns: 4fr 4fr 4fr 4fr;
     gap: 13px;
-    height: 530px;
-    width: 425px;
-    padding-bottom: 63px;
+    height: 568px;
+    width: 564px;
+    padding-bottom: 98px;
     justify-content: center;
 }
 
@@ -90,7 +92,9 @@ button{
     background-color:  #eb6d4d;
     filter: drop-shadow(0px 0px 9px  #a8391d9d);
     font-family: 'Ubuntu', sans-serif;
-    font-size: 34px;
+    font-size: 49px;
+        width: 93%;
+    height: 107%;
     color: #9b412b;
     cursor: pointer;
     transition: background-color 0.1s ease-in-out, transform 0.2s ease-in-out;
@@ -99,5 +103,237 @@ button{
 button:active {
     transform: scale(0.97);
     background-color: #d35b3d;
+}*/
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #264653;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.divContainer{
+    display: flex;
+    align-items: center;
+    border-top:  #e98a72c0 solid 4px;
+    border-left:  #db7258b1 solid 4px;
+    border-bottom: #c95437c3 solid 5px;
+    border-right: #d25a3ccf solid 5px;
+    background-color:  #eb6d4d;
+    border-radius: 35px;
+    flex-wrap: nowrap;
+    width: 91%;
+    height: 68%;
+    margin: 8% 0;
+    flex-direction: column;
+    filter: drop-shadow(0 0 50px #1bab98ea);
+}
+
+.divDisplay{
+    background-color: #ebcb78c4;
+    border-top:    #e8d29ad5 solid 4px;
+    border-left:   #fce4a7d0 solid 4px;
+    border-bottom: #e2be61c0 solid 7px;
+    border-right:  #e2be61c0 solid 7px;
+    height: 16%;
+    width: 82%;
+    border-radius: 15px;
+    margin: 10% 0% 7% 0%;
+    filter: drop-shadow(0px 0px 10px  #a8391dc0);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+#valorAnterior{
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    font-family: 'Digital-7', sans-serif;
+    height: 39px;
+    padding: 3px;
+    font-size: 29px;
+    font-weight: 500;
+    color: #172e37;
+}
+
+#resultado{
+    height: 60px;
+}
+
+.botonera{
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr 4fr;
+    gap: 1px;
+    height: 338px;
+    width: 293px;
+    padding: 4px 20px 49px 25px;
+    justify-content: center;
+}
+
+.col-2{
+    grid-column: 1/3;
+}
+
+button{
+    border-radius: 50px;
+    border-top:  #e98a72c0 solid 2px;
+    border-left:  #db7258b1 solid 2px;
+    border-bottom: #c95437c3 solid 5px;
+    border-right: #d25a3ccf solid 4px;
+    background-color:  #eb6d4d;
+    filter: drop-shadow(0px 0px 9px  #a8391d9d);
+    font-family: 'Ubuntu', sans-serif;
+    width: 93%;
+    height: 94%;
+    font-size: 26px;
+    color: #9b412b;
+    cursor: pointer;
+    transition: background-color 0.1s ease-in-out, transform 0.2s ease-in-out;
+}
+
+button:active {
+    transform: scale(0.97);
+    background-color: #d35b3d;
+}
+
+/*---RESPONSIVE--*/
+
+@media screen and (min-width: 425px) {
+    .divContainer {
+        width: 87%;
+    }    
+    .botonera {
+        gap: 7px;
+        height: 370px;
+        width: 313px;
+        padding: 9px 29px 49px 29px;
+    }
+    button{
+        font-size: 26px; 
+    }
+    .divDisplay {
+        height: 17%;
+    }
+    #valorAnterior {
+        height: 42px;
+        padding: 6px;
+        font-size: 33px;
+    }
+}
+
+@media screen and (min-width: 556px) {
+    .divContainer {
+        height: 73%;
+        width: 71%;
+    }    
+    .botonera {
+        padding: 9px 25px 49px 29px;
+    }
+}
+
+@media screen and (min-width: 605px) {
+    .divContainer {
+        height: 73%;
+        width: 71%;
+    }    
+    .botonera {
+        gap: 0px;
+        width: 351px;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .divContainer {
+        height: 75%;
+        width: 50%;
+    }    
+    .botonera {
+        padding: 9px 29px 49px 29px;
+        width: 327px;
+        gap: 8px;
+    }
+    button{
+        font-size: 30px; 
+    }
+    .divDisplay {
+        height: 18%;
+    }
+    #valorAnterior {
+        height: 43px;
+        padding: 9px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .divContainer {
+        height: 73%;
+        width: 36%;
+    }    
+    .botonera {
+        padding-bottom: 47px;
+        height: 362px;
+        width: 306px;
+        gap: 7px
+    }
+    .divDisplay {
+        height: 18%;
+    }
+    #valorAnterior {
+        height: 40px;
+        padding: 7px;
+        font-size: 32px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .divContainer{
+        height: 74%;
+        width: 32%;
+    }
+    .divDisplay {
+        height: 19%;
+        margin: 9% 0% 6% 0%;
+    }
+    #valorAnterior{
+        height: 39px;
+        padding: 5px;
+        font-size: 42px;
+    }
+    .botonera{
+        gap: 2px;
+        width: 375px;
+        padding: 6px 20px 47px 29px;
+        height: 425px;
+    }
+    button{
+        font-size: 35px; 
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    .divContainer{
+        height: 74%;
+        width: 24%;
+    }
+    .divDisplay {
+        height: 18%;
+    }
+    #valorAnterior{
+        height: 58px;
+        padding: 3px;
+        font-size: 51px;
+    }
+    .botonera{
+        gap: 3px;
+        width: 524px;
+        padding: 6px 13px 47px 29px;
+        height: 551px
+    }
+    button{
+        font-size: 52px;
+    }
 }
 
